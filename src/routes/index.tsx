@@ -40,6 +40,69 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
+  const autoplay = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnMouseEnter: true }),
+  );
+
+  const reviews = [
+    {
+      name: "Julien Martin",
+      initials: "JM",
+      rating: 5,
+      date: "Il y a 2 semaines",
+      text: "Service au top ! Véhicule livré dans les délais annoncés et belle économie réalisée par rapport au prix concessionnaire français. L'équipe est très réactive et professionnelle. Je recommande vivement M-Import.",
+    },
+    {
+      name: "Sophie Lefèvre",
+      initials: "SL",
+      rating: 5,
+      date: "Il y a 1 mois",
+      text: "Accompagnement très professionnel du début à la fin. Une équipe à l'écoute, transparente sur les délais et les démarches. Mon SUV est arrivé impeccable, comme neuf. Merci pour ce travail de qualité !",
+    },
+    {
+      name: "Karim Benali",
+      initials: "KB",
+      rating: 5,
+      date: "Il y a 1 mois",
+      text: "J'ai trouvé exactement le SUV que je cherchais à un prix imbattable. Plus de 6 000 € d'économies réalisées. Le suivi a été irréproachable, je recommande à 100%.",
+    },
+    {
+      name: "Camille Dubois",
+      initials: "CD",
+      rating: 5,
+      date: "Il y a 2 mois",
+      text: "Première expérience avec un mandataire et je ne suis pas déçue. Communication fluide, devis clair, livraison à domicile sans aucun souci. Je referai appel à eux pour mon prochain achat.",
+    },
+    {
+      name: "Nicolas Roussel",
+      initials: "NR",
+      rating: 5,
+      date: "Il y a 2 mois",
+      text: "Très satisfait de ma berline allemande importée. L'équipe a su me conseiller sur la finition la plus adaptée à mes besoins. Économie réelle et service haut de gamme.",
+    },
+    {
+      name: "Émilie Garnier",
+      initials: "EG",
+      rating: 5,
+      date: "Il y a 3 mois",
+      text: "Une équipe humaine et compétente. Ils ont géré toutes les formalités administratives, je n'ai eu qu'à récupérer les clés. Bravo pour le professionnalisme !",
+    },
+    {
+      name: "Thomas Petit",
+      initials: "TP",
+      rating: 5,
+      date: "Il y a 3 mois",
+      text: "Excellent rapport qualité/prix, conseils avisés et délais respectés. M-Import a su me trouver le coupé sport de mes rêves avec toutes les options souhaitées. Merci !",
+    },
+    {
+      name: "Laura Vasseur",
+      initials: "LV",
+      rating: 5,
+      date: "Il y a 4 mois",
+      text: "Je recommande sans hésiter. L'équipe est disponible, à l'écoute et propose un vrai service sur mesure. Mon véhicule est parfait, livré comme convenu.",
+    },
+  ];
+
   return (
     <>
       {/* HERO */}

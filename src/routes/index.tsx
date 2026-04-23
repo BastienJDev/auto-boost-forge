@@ -15,6 +15,15 @@ import car1 from "@/assets/car-1.jpg";
 import car2 from "@/assets/car-2.jpg";
 import car3 from "@/assets/car-3.jpg";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({

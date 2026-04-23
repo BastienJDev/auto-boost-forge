@@ -50,6 +50,12 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "M-Import — L'automobile autrement" },
+      { name: "description", content: "Auto Import Pro is a professional website for an automotive dealership, featuring a multi-step contact form and Google reviews carousel." },
+      { property: "og:description", content: "Auto Import Pro is a professional website for an automotive dealership, featuring a multi-step contact form and Google reviews carousel." },
+      { name: "twitter:description", content: "Auto Import Pro is a professional website for an automotive dealership, featuring a multi-step contact form and Google reviews carousel." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2e7cc90-8ace-490d-84eb-2fd1f0ca1132/id-preview-6c3d945f--8bcd67f2-f5ad-44b8-afed-88b474a192cb.lovable.app-1776929476780.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2e7cc90-8ace-490d-84eb-2fd1f0ca1132/id-preview-6c3d945f--8bcd67f2-f5ad-44b8-afed-88b474a192cb.lovable.app-1776929476780.png" },
     ],
     links: [
       {
